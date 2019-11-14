@@ -7,11 +7,11 @@ function OnboardingForm(props){
     return (
         <div className = "onboarding-form">
             <Form>
+                <label>
                 <ErrorMessage
                     name = "name"
                     render = {msg => <div className = "error">{msg}</div>}
                 />
-                <label>
                     Name
                     <Field
                         type = "text"
@@ -20,11 +20,11 @@ function OnboardingForm(props){
                     />
                 </label>
 
+                <label>
                 <ErrorMessage
                     name = "password"
                     render = {msg => <div className = "error">{msg}</div>}
                 />
-                <label>
                     Password
                     <Field
                         type = "password"
@@ -33,12 +33,12 @@ function OnboardingForm(props){
                     />
                 </label>
 
+                <label>
                 <ErrorMessage
                     name = "email"
                     render = {msg => <div className = "error">{msg}</div>}
                 />
-                <label>
-                    Name
+                    Email
                     <Field
                         type = "email"
                         name = "email"
